@@ -1,0 +1,13 @@
+.Stories {
+  height: fit-content;
+  display: flex;
+  padding: 14px;
+  padding-top: 22px;
+  scroll-behavior: auto;
+  overflow-x: scroll;
+  gap: 15px;
+  /* border: 1px solid red; */
+}
+.Stories::-webkit-scrollbar {
+  display: none;
+}

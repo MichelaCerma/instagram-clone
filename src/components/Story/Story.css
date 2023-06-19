@@ -1,0 +1,39 @@
+.Story {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+}
+.Story__img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+
+.Story__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  width: fit-content;
+  border-radius: 50px;
+  padding: 3px;
+  background-image: linear-gradient(
+    314.35deg,
+    #e20337 6.03%,
+    #c60188 40.88%,
+    #7700c3 73.23%
+  );
+  background-origin: border-box;
+  box-shadow: inset 0 1000px white;
+  border: 2px solid transparent;
+}
+.Story__nick {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 0.7rem;
+}
