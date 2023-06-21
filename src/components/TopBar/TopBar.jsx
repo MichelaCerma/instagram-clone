@@ -1,20 +1,22 @@
 import "./TopBar.css";
+
 import {
-  InstragramLogo,
+  InstagramLogo,
   CameraIcon,
   IGTVIcon,
   MessangerIcon,
 } from "../../icons";
-const TopBar = () => {
+
+const TopBar = ({ setSection }) => {
   return (
     <div className="TopBar">
-      <CameraIcon />
-      <div className="TopBar_instagramLogo">
-        <InstragramLogo />
+      <CameraIcon onClick={() => setSection("camera")} />
+      <div className="TopBar_instagramLogo" onClick={() => setSection("home")}>
+        <InstagramLogo />
       </div>
       <div className="TopBar__actions">
         <IGTVIcon />
-        <MessangerIcon />
+        <MessangerIcon onClick={() => setSection("message")} />
       </div>
     </div>
   );

@@ -1,0 +1,77 @@
+.Post {
+}
+.Post__topSide {
+  height: fit-content;
+  display: flex;
+  padding: 11px;
+  gap: 13px;
+  align-items: center;
+  justify-content: space-between;
+}
+.Post__userImg {
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+}
+.Post__nick {
+  font-size: 0.9rem;
+
+  font-weight: 500;
+}
+.Post__location {
+  font-size: 0.8rem;
+}
+.Post__TopSide__text {
+  width: 100%;
+
+  display: flex;
+  gap: 3px;
+  flex-direction: column;
+  justify-content: center;
+}
+.Post__dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Post__img {
+  width: 100%;
+}
+.Post__actions {
+  padding: 9px 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.Post__heartCommMess {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  gap: 17px;
+  align-items: center;
+}
+.Post__likes {
+  display: flex;
+
+  align-items: center;
+  gap: 10px;
+}
+.Post__friend,
+.Post__likesNum,
+.Post__caption__username {
+  font-weight: 500;
+}
+.Post__caption__text {
+  display: flex;
+}
+.Post__captionContainer {
+  padding: 0 15px 10px;
+}
+.Post__caption {
+  font-weight: 400;
+}
+.Post__likes img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}

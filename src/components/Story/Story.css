@@ -1,10 +1,7 @@
 .Story {
   /* border: 1px solid red; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
-  justify-content: center;
+
+  width: 68px;
 }
 .Story__img {
   width: 56px;
@@ -35,5 +32,6 @@
   overflow: hidden;
   white-space: nowrap;
   text-align: center;
+
   font-size: 0.7rem;
 }

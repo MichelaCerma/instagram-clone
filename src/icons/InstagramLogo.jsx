@@ -1,4 +1,4 @@
-const InstragramLogo = (props) => (
+const InstagramLogo = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={105}
@@ -14,4 +14,4 @@ const InstragramLogo = (props) => (
     />
   </svg>
 );
-export default InstragramLogo;
+export default InstagramLogo;
