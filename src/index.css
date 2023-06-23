@@ -6,3 +6,14 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+body {
+  background-color: #e4e4e4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root {
+  background-color: #fff;
+  width: 375px;
+  height: 100vh;
+}

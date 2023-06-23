@@ -17,6 +17,9 @@
 .TopBar_instagramLogo {
   position: absolute;
   /* border: 1px solid green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: fit-content;
   height: fit-content;
 

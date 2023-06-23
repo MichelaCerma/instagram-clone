@@ -1,0 +1,50 @@
+.Conversation {
+  /* border: 1px solid red; */
+  padding: 10px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  align-items: center;
+}
+.Conversation__imgUser {
+  border-radius: 100%;
+  width: 56px;
+  height: 56px;
+}
+.Conversation__userInfo {
+  display: flex;
+  font-size: 0.8rem;
+
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Conversation__borderImg {
+  border-radius: 100%;
+  display: flex;
+
+  padding: 3px;
+
+  border: 1px solid #c7c7cc;
+}
+.Conversation__username {
+  font-weight: 400;
+}
+.Conversation__contentTime {
+  display: flex;
+  color: rgba(0, 0, 0, 0.4);
+  align-items: center;
+
+  justify-content: space-between;
+}
+.Conversation__content {
+  width: 190px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+}
+.Conversation_time {
+  display: flex;
+  width: fit-content;
+}

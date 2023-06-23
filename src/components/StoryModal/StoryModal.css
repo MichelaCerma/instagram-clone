@@ -1,0 +1,13 @@
+.modalStory {
+  visibility: hidden;
+}
+.modalStory.open {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+  visibility: visible;
+  top: 0;
+  left: 0;
+  background-color: green;
+}

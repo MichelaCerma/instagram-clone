@@ -8,8 +8,8 @@ const Message = () => {
   const [message, setMessage] = useState([]);
   const [chat, setChat] = useState("");
   useEffect(() => {
-    GET("https://api.npoint.io/45615d0ddef177eef95b").then((data) =>
-      setMessage(data.messageList)
+    GET("https://api.npoint.io/d0f57cb8df2bf9e547ec").then((data) =>
+      setMessage(data)
     );
   }, []);
 
@@ -26,26 +26,61 @@ const Message = () => {
             />
           ))
         );
-      case "Emily":
+      case "Maria":
+        return (
+          <>
+            <Conversation
+              setChat={setChat}
+              messageData={message.find(
+                (chat) => chat.participants[1].username === "Maria"
+              )}
+            />
+          </>
+        );
+        break;
+      case "Julia":
         return (
           <Conversation
-            setMessage={message.find(
-              (chat) => chat.participants[1].username === "Emily"
+            setChat={setChat}
+            messageData={message.find(
+              (chat) => chat.participants[1].username === "Julia"
             )}
           />
         );
         break;
-      case "Sarah":
+      case "Mark":
         return (
           <Conversation
-            setMessage={message.find(
-              (chat) => chat.participants[1].username === "Sarah"
+            setChat={setChat}
+            messageData={message.find(
+              (chat) => chat.participants[1].username === "Mark"
+            )}
+          />
+        );
+        break;
+      case "Linda":
+        return (
+          <Conversation
+            setChat={setChat}
+            messageData={message.find(
+              (chat) => chat.participants[1].username === "Linda"
+            )}
+          />
+        );
+        break;
+      case "Lucas":
+        return (
+          <Conversation
+            setChat={setChat}
+            messageData={message.find(
+              (chat) => chat.participants[1].username === "Lucas"
             )}
           />
         );
         break;
     }
   };
+
   return (
     <>
       <input type="text" className="message__input" placeholder="Search" />

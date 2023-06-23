@@ -18,7 +18,7 @@ function App() {
       .then((data) => setUserlist(data));
   }, []);
   useEffect(() => {
-    GET("https://api.npoint.io/e2e2815a967c684654a9").then((data) =>
+    GET("https://api.npoint.io/e882b123cc0e0822f9de").then((data) =>
       setPost(data)
     );
   }, []);
@@ -45,6 +45,7 @@ function App() {
   return (
     <>
       <TopBar setSection={setSection} />
+
       {onSectionRender()}
     </>
   );

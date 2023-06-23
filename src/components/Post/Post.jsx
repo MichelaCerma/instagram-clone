@@ -6,6 +6,8 @@ import {
   MessangerIcon,
   SaveIcon,
 } from "../../icons";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 const Post = ({ postData }) => {
   return (
     <section className="Post">
@@ -23,7 +25,14 @@ const Post = ({ postData }) => {
           <DotsIcon />
         </div>
       </div>
-      <img src={postData.image_url} alt="" className="Post__img" />
+      <Swiper>
+        {postData.gallery.map((img) => (
+          <SwiperSlide>
+            <img className="Post__img" src={img} alt="" />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+
       <div className="Post__actions">
         <div className="Post__heartCommMess">
           <div className="Post__heartIcon">
